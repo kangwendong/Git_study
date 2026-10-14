@@ -36,5 +36,9 @@ GitHub 会信任存放了该公钥的机器，后续在该机器上操作 Git �
 找到远程仓库地址复制，然后在个人电脑新建一个存放的文件夹；进入文件夹后鼠标右键打开git bash或git cmd,输入git命令<br>
 git clone https://github.com/kangwendong/git_study<br>
 回车即可下载；
-<blockquote>
+</blockquote>
 
+# 本地代码上传到仓库
+<blockquote>
+在vscode里面新建文件，然后在vscode左列的源代码管理中与github账号进行绑定后，初始化仓库，为更改的文件进行一个提交命名，提交后创建了存档，接着再次提交就可把代码提交到仓库。
+</blockquote>
