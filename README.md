@@ -46,7 +46,9 @@ git clone https://github.com/kangwendong/git_study<br>
 # 在vscode中建立代码，以上传到远程仓库，当然，有魔法可以翻墙的话就不需要这步了
 <blockquote>
 在终端中设置端口，以接通隧道上传<br>
-
+全局代理：<br>
+git config --global https.proxy https://127.0.0.1:8080
+<br>
 查看当前代理：
 git config --global --get http.proxy<br>
 针对github设置代理：
