@@ -47,4 +47,12 @@ git clone https://github.com/kangwendong/git_study<br>
 <blockquote>
 在终端中设置端口，以接通隧道上传<br>
 
+查看当前代理：
+git config --global --get http.proxy<br>
+针对github设置代理：
+<br>git config --global http.https://github.com.proxy socks5://127.0.0.1:7891
+<br>
+检查代理是否生效：<br>
+git config --global --list
+取消代理:git config --global --unset http.proxy<br>
 </blockquote>
