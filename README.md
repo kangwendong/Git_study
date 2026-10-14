@@ -46,6 +46,8 @@ git clone https://github.com/kangwendong/git_study<br>
 # 在vscode中建立代码，以上传到远程仓库，需要用到代理端口。当然，有魔法可以翻墙的话就不需要这步了（可选）
 <blockquote>
 
+
+<p>简介：你可以用 git config --global http.proxy 或 https.proxy 来设置 Git 代理，例如：git config --global http.proxy http://127.0.0.1:8080 或 git config --global http.proxy socks5://127.0.0.1:7891。取消代理用 git config --global --unset http.proxy。<p>
 全局代理：<br>
 git config --global https.proxy https://127.0.0.1:代理端口数字
 <br>
@@ -53,7 +55,7 @@ git config --global https.proxy https://127.0.0.1:代理端口数字
 <br>git config --global http.https://github.com.proxy socks5://127.0.0.1:代理端口数字
 <br>
 <strong>移除代理的命令：git config --global --unset http.https://github.com.proxy</strong><br>
-检查代理是否生效：<br>
+<strong>检查代理是否生效：</strong><br>
 git config --global --list<br>
 取消代理:git config --global --unset http.proxy<br>
 </blockquote>
