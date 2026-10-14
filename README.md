@@ -42,3 +42,9 @@ git clone https://github.com/kangwendong/git_study<br>
 <blockquote>
 在vscode里面新建文件，然后在vscode左列的源代码管理中与github账号进行绑定后，初始化仓库，为更改的文件进行一个提交命名，提交后创建了存档，接着再次提交就可把代码提交到仓库。
 </blockquote>
+
+# 在vscode中建立代码，以上传到远程仓库，当然，有魔法可以翻墙的话就不需要这步了
+<blockquote>
+在终端中设置端口，以接通隧道上传<br>
+
+</blockquote>
