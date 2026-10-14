@@ -1,2 +1,40 @@
 # git_study
-学习Web所创建的仓库，目前用于本人瞎搞
+学习Web所创建的仓库，此为git学习。
+使用git,vscode,与github的使用
+ # git官网
+https://git-scm.com/,<p>里面可以下载git和学习相关的知识；</p>
+<blockquote>安装 Git 后，你首先应该设置用户名和电子邮件地址。 这很重要，因为每个 Git 提交都会使用这些信息，并且它不可更改地融入你开始创建的提交中：<br>
+$ git config --global user.name "kangwendong"             <br>
+$ git config --global user.email kangwendong@example.com           
+
+
+*kangwendong是用户名，kangwendong@example.com是邮箱，
+用户名和邮箱最好与你的github上的名字与邮箱相对应*<br>
+
+打开vscode,新建终端，依次输入<br>
+git config --global user.name "kangwendong" ,回车<br>
+git config --global user.email kangwendong@example.com       <br>
+这样你的git就配置好了你电脑所对应的信息，</blockquote>
+
+# 建立个人电脑上的ssh,并与远程仓库相对应
+在终端里面设置ssh所需要的命令：<br>
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"，引号包围的是自己的邮箱，最好是github上的邮箱，然后回车直到出现多列字母，这样就建立好了个人电脑的ssh密钥。
+# 如何查看建立好的ssh密钥
+C盘/用户/用户名/.ssh文件夹<br>
+<img src="ssh_photo.png" alt="截取的ssh路径图" width="500"><br>
+.pub后缀的就是公钥，没有后缀的就是私钥;用记事本打开公钥，复制里面的代码，打开github设置里面的ssh密钥，新建ssh密钥，这样本地电脑就和远程仓库github绑定了。
+<blockquote>公钥和私钥的区别<p>SSH 使用非对称加密：
+
+私钥（id_rsa）：保存在本地，用于解密和签名，绝不上传。
+
+公钥（id_rsa.pub）：上传到 GitHub，用于验证身份 
+
+GitHub 会信任存放了该公钥的机器，后续在该机器上操作 Git 时无需输入密码。</P></blockquote>
+
+# 克隆远程仓库到本地
+<blockquote>
+找到远程仓库地址复制，然后在个人电脑新建一个存放的文件夹；进入文件夹后鼠标右键打开git bash或git cmd,输入git命令<br>
+git clone https://github.com/kangwendong/git_study<br>
+回车即可下载；
+<blockquote>
+
