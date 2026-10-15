@@ -40,6 +40,21 @@ git clone 你想下载的ssh链接<br>
 回车即可下载；
 </blockquote>
 
+# git命令使用,使用vscode可跳过，用vscode更方便
+<blockquote>
+…或者在命令行创建一个新的仓库
+echo "# phoneforPro" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kangwendong/phoneforPro.git
+git push -u origin main
+…或者从命令行推送已有的仓库
+git remote add origin https://github.com/kangwendong/phoneforPro.git
+git branch -M main
+git push -u origin main
+</blockquote>
 # 新建文件，仓库初始化
 <blockquote>
 在vscode里面新建文件，然后在vscode左列的源代码管理中与github账号进行绑定后，初始化仓库，为更改的文件进行一个提交命名，提交后创建了存档，接着再次提交就可把代码提交到仓库。
@@ -50,16 +65,17 @@ git clone 你想下载的ssh链接<br>
 <blockquote>
 
 
-<p>简介：你可以用 git config --global http.proxy 或 https.proxy 来设置 Git 代理，例如：git config --global http.proxy http://127.0.0.1:端口号 或 git config --global http.proxy socks5://127.0.0.1:端口号。取消代理用 git config --global --unset http.proxy。<p>
+<p>简介：你可以用 git config --global http.proxy 或 https.proxy 来设置 Git 代理，例如：git config --global http.proxy http://127.0.0.1:端口号 或 git config --global http.proxy socks5://127.0.0.1:端口号。取消代理用 git config --global --unset http.proxy。<p><big>水平线里的设置最好别用，用水平线外的比较好取消代理</big><hr>
+<dl>github的全局代理：</dl>
+<dt><dd>git config --global https.proxy https://127.0.0.1:代理端口数字</dd></dt>
 
-github的全局代理：<br>
-git config --global https.proxy https://127.0.0.1:代理端口数字
-<br>
-针对github设置代理：
-<br>git config --global http.https://github.com.proxy socks5://127.0.0.1:代理端口数字
-<br>
-<strong>移除代理的命令：git config --global --unset http.https://github.com.proxy</strong><br>
-<strong>检查代理是否生效：</strong><br>
+<dl>针对github设置代理：</dl>
+<dt><dd>git config --global http.https://github.com.proxy socks5://127.0.0.1:代理端口数字</dd></dt>
+
+<dl>移除代理的命令：</dl>
+<dt><dd>git config --global --unset http.https://github.com.proxy</dd></dt>
+<hr>
+<strong>检查代理是否生效：</strong>
 git config --global --list<br>
 取消代理:git config --global --unset http.proxy<br>
 </blockquote>
