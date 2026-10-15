@@ -10,7 +10,7 @@ $ git config --global user.email kangwendong@example.com
 
 *kangwendong是用户名，kangwendong@example.com是邮箱，
 用户名和邮箱最好与你的github上的名字与邮箱相对应*<br>
-
+# 安装git好第一步，设置用户名和邮箱，在vscode里使用
 打开vscode,新建终端，依次输入<br>
 git config --global user.name "kangwendong" ,回车<br>
 git config --global user.email kangwendong@example.com       <br>
@@ -43,7 +43,7 @@ git clone https://github.com/kangwendong/git_study<br>
 在vscode里面新建文件，然后在vscode左列的源代码管理中与github账号进行绑定后，初始化仓库，为更改的文件进行一个提交命名，提交后创建了存档，接着再次提交就可把代码提交到仓库。
 </blockquote>
 
-# 在vscode中建立代码，以上传到远程仓库，需要用到代理端口。当然，有魔法可以翻墙的话就不需要这步了（可选）
+# 在vscode中建立代码，以上传到远程仓库，需要用到代理端口。没绑定ssh的可以用代理端口，不推荐，因为太麻烦了（可选），绑定了ssh可<a href="#one">跳过</a>
 <blockquote>
 
 
@@ -60,4 +60,6 @@ git config --global --list<br>
 取消代理:git config --global --unset http.proxy<br>
 </blockquote>
 
+<a id="one"></a>
+# 这一步
 
