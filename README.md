@@ -32,23 +32,27 @@ C盘/用户/用户名/.ssh文件夹<br>
 GitHub 会信任存放了该公钥的机器，后续在该机器上操作 Git 时无需输入密码。</P></blockquote>
 
 # 克隆远程仓库到本地
+<p>建立好ssh后就可把github上的代码下载到个人仓库。</p>
+<img src="git_ssh.png" alt="截取的git_clone_https">
 <blockquote>
 找到远程仓库地址复制，然后在个人电脑新建一个存放的文件夹；进入文件夹后鼠标右键打开git bash或git cmd,输入git命令<br>
-git clone https://github.com/kangwendong/git_study<br>
+git clone 你想下载的ssh链接<br>
 回车即可下载；
 </blockquote>
 
-# 本地代码上传到仓库
+# 新建文件，仓库初始化
 <blockquote>
 在vscode里面新建文件，然后在vscode左列的源代码管理中与github账号进行绑定后，初始化仓库，为更改的文件进行一个提交命名，提交后创建了存档，接着再次提交就可把代码提交到仓库。
 </blockquote>
 
-# 在vscode中建立代码，以上传到远程仓库，需要用到代理端口。没绑定ssh的可以用代理端口，不推荐，因为太麻烦了（可选），绑定了ssh可<a href="#one">跳过</a>
+# 在vscode中建立代码，以上传到远程仓库。本地代码上传到仓库，网络不好需要用到代理，请查看自己代理的端口号
+
 <blockquote>
 
 
-<p>简介：你可以用 git config --global http.proxy 或 https.proxy 来设置 Git 代理，例如：git config --global http.proxy http://127.0.0.1:8080 或 git config --global http.proxy socks5://127.0.0.1:7891。取消代理用 git config --global --unset http.proxy。<p>
-全局代理：<br>
+<p>简介：你可以用 git config --global http.proxy 或 https.proxy 来设置 Git 代理，例如：git config --global http.proxy http://127.0.0.1:端口号 或 git config --global http.proxy socks5://127.0.0.1:端口号。取消代理用 git config --global --unset http.proxy。<p>
+
+github的全局代理：<br>
 git config --global https.proxy https://127.0.0.1:代理端口数字
 <br>
 针对github设置代理：
@@ -60,6 +64,5 @@ git config --global --list<br>
 取消代理:git config --global --unset http.proxy<br>
 </blockquote>
 
-<a id="one"></a>
-# 这一步
+
 
